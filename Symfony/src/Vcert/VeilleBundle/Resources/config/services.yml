@@ -1,0 +1,7 @@
+parameters:
+#    vcert_veille.example.class: Vcert\VeilleBundle\Example
+
+services:
+#    vcert_veille.example:
+#        class: %vcert_veille.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
