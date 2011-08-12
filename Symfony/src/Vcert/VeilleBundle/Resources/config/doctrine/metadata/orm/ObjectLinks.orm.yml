@@ -1,0 +1,27 @@
+ObjectLinks:
+  type: entity
+  table: object_links
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    vulnerabilityId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: vulnerability_id
+    objectCorrelationId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: object_correlation_id
+    objectAffectTypeId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: object_affect_type_id
+  lifecycleCallbacks: {  }

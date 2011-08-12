@@ -1,0 +1,27 @@
+ObjectCorrelations:
+  type: entity
+  table: object_correlations
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    objectVendorId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: object_vendor_id
+    objectProductId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: object_product_id
+    objectVersionId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: object_version_id
+  lifecycleCallbacks: {  }

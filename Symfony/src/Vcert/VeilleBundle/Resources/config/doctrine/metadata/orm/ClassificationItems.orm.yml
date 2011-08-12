@@ -1,0 +1,22 @@
+ClassificationItems:
+  type: entity
+  table: classification_items
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    vulnerabilityId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: vulnerability_id
+    classificationId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: classification_id
+  lifecycleCallbacks: {  }

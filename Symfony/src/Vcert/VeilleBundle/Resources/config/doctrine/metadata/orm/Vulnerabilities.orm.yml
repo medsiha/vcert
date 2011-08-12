@@ -1,0 +1,64 @@
+Vulnerabilities:
+  type: entity
+  table: vulnerabilities
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    osvdbId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: osvdb_id
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    disclosureDate:
+      type: datetime
+      nullable: false
+      column: disclosure_date
+    discoveryDate:
+      type: datetime
+      nullable: false
+      column: discovery_date
+    osvdbCreateDate:
+      type: datetime
+      nullable: false
+      column: osvdb_create_date
+    lastModifiedDate:
+      type: datetime
+      nullable: false
+      column: last_modified_date
+    exploitPublishDate:
+      type: datetime
+      nullable: false
+      column: exploit_publish_date
+    solutionDate:
+      type: datetime
+      nullable: false
+      column: solution_date
+    description:
+      type: text
+      nullable: true
+    solution:
+      type: text
+      nullable: true
+    tDescription:
+      type: text
+      nullable: true
+      column: t_description
+    manualNotes:
+      type: text
+      nullable: true
+      column: manual_notes
+    shortDescription:
+      type: text
+      nullable: true
+      column: short_description
+  lifecycleCallbacks: {  }

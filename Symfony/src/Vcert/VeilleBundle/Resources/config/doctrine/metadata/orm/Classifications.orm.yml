@@ -1,0 +1,27 @@
+Classifications:
+  type: entity
+  table: classifications
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    classificationTypeId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: classification_type_id
+    name:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    longname:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+  lifecycleCallbacks: {  }

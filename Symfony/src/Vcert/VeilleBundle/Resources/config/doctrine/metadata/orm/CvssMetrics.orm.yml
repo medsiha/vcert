@@ -1,0 +1,82 @@
+CvssMetrics:
+  type: entity
+  table: cvss_metrics
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    accessVector:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: access_vector
+    accessComplexity:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: access_complexity
+    authentication:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    confidentialityImpact:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: confidentiality_impact
+    integrityImpact:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: integrity_impact
+    availabilityImpact:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: availability_impact
+    source:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    cveId:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: cve_id
+    generatedOn:
+      type: datetime
+      nullable: true
+      column: generated_on
+    score:
+      type: float
+      nullable: true
+    calculatedCvssBaseScore:
+      type: float
+      nullable: true
+      column: calculated_cvss_base_score
+    vulnerabilityId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: vulnerability_id
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+  lifecycleCallbacks: {  }
