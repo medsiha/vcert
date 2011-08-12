@@ -1,6 +1,6 @@
-ObjectCorrelations:
+Vcert\VeilleBundle\Entity\ClassificationItems:
   type: entity
-  table: object_correlations
+  table: classification_items
   fields:
     id:
       id: true
@@ -9,19 +9,14 @@ ObjectCorrelations:
       nullable: false
       generator:
         strategy: IDENTITY
-    objectVendorId:
+    vulnerabilityId:
       type: integer
       unsigned: false
       nullable: true
-      column: object_vendor_id
-    objectProductId:
+      column: vulnerability_id
+    classificationId:
       type: integer
       unsigned: false
       nullable: true
-      column: object_product_id
-    objectVersionId:
-      type: integer
-      unsigned: false
-      nullable: true
-      column: object_version_id
+      column: classification_id
   lifecycleCallbacks: {  }

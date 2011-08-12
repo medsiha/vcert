@@ -1,4 +1,4 @@
-Vulnerabilities:
+Vcert\VeilleBundle\Entity\Vulnerabilities:
   type: entity
   table: vulnerabilities
   fields:

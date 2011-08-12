@@ -1,6 +1,6 @@
-ExtReferenceTypes:
+Vcert\VeilleBundle\Entity\ObjectVersions:
   type: entity
-  table: ext_reference_types
+  table: object_versions
   fields:
     id:
       id: true

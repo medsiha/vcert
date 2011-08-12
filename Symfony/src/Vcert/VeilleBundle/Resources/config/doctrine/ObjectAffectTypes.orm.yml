@@ -1,4 +1,4 @@
-ObjectAffectTypes:
+Vcert\VeilleBundle\Entity\ObjectAffectTypes:
   type: entity
   table: object_affect_types
   fields:

@@ -1,6 +1,6 @@
-ObjectVersions:
+Vcert\VeilleBundle\Entity\ObjectVendors:
   type: entity
-  table: object_versions
+  table: object_vendors
   fields:
     id:
       id: true

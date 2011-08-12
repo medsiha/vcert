@@ -1,6 +1,6 @@
-Classifications:
+Vcert\VeilleBundle\Entity\ExtReferenceTypes:
   type: entity
-  table: classifications
+  table: ext_reference_types
   fields:
     id:
       id: true
@@ -9,17 +9,7 @@ Classifications:
       nullable: false
       generator:
         strategy: IDENTITY
-    classificationTypeId:
-      type: integer
-      unsigned: false
-      nullable: true
-      column: classification_type_id
     name:
-      type: string
-      length: 255
-      fixed: false
-      nullable: true
-    longname:
       type: string
       length: 255
       fixed: false

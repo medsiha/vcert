@@ -1,6 +1,6 @@
-ObjectLinks:
+Vcert\VeilleBundle\Entity\Credits:
   type: entity
-  table: object_links
+  table: credits
   fields:
     id:
       id: true
@@ -14,14 +14,9 @@ ObjectLinks:
       unsigned: false
       nullable: true
       column: vulnerability_id
-    objectCorrelationId:
+    authorId:
       type: integer
       unsigned: false
       nullable: true
-      column: object_correlation_id
-    objectAffectTypeId:
-      type: integer
-      unsigned: false
-      nullable: true
-      column: object_affect_type_id
+      column: author_id
   lifecycleCallbacks: {  }

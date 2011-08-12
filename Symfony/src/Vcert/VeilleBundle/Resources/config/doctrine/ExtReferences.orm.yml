@@ -1,6 +1,6 @@
-ClassificationItems:
+Vcert\VeilleBundle\Entity\ExtReferences:
   type: entity
-  table: classification_items
+  table: ext_references
   fields:
     id:
       id: true
@@ -12,11 +12,20 @@ ClassificationItems:
     vulnerabilityId:
       type: integer
       unsigned: false
-      nullable: true
+      nullable: false
       column: vulnerability_id
-    classificationId:
+    extReferenceTypeId:
       type: integer
       unsigned: false
       nullable: true
-      column: classification_id
+      column: ext_reference_type_id
+    value:
+      type: text
+      nullable: true
+    indirect:
+      type: boolean
+      nullable: true
+    fourofour:
+      type: boolean
+      nullable: true
   lifecycleCallbacks: {  }

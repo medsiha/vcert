@@ -1,6 +1,6 @@
-ClassificationTypes:
+Vcert\VeilleBundle\Entity\ObjectProducts:
   type: entity
-  table: classification_types
+  table: object_products
   fields:
     id:
       id: true

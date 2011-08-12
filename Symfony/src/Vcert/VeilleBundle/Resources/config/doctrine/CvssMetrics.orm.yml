@@ -1,4 +1,4 @@
-CvssMetrics:
+Vcert\VeilleBundle\Entity\CvssMetrics:
   type: entity
   table: cvss_metrics
   fields:

@@ -1,6 +1,6 @@
-Authors:
+Vcert\VeilleBundle\Entity\Classifications:
   type: entity
-  table: authors
+  table: classifications
   fields:
     id:
       id: true
@@ -9,25 +9,19 @@ Authors:
       nullable: false
       generator:
         strategy: IDENTITY
+    classificationTypeId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: classification_type_id
     name:
       type: string
       length: 255
       fixed: false
       nullable: true
-    email:
+    longname:
       type: string
       length: 255
       fixed: false
       nullable: true
-    company:
-      type: string
-      length: 255
-      fixed: false
-      nullable: true
-    companyUrl:
-      type: string
-      length: 255
-      fixed: false
-      nullable: true
-      column: company_url
   lifecycleCallbacks: {  }
