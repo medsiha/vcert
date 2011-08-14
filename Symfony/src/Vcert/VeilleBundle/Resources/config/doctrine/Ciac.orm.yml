@@ -1,0 +1,26 @@
+Vcert\VeilleBundle\Entity\Ciac:
+  type: entity
+  table: ciac
+  fields:
+    id:
+      id: true
+      type: string
+      length: 11
+      fixed: false
+      nullable: false
+    titre:
+      type: text
+      nullable: false
+    description:
+      type: text
+      nullable: true
+    pubdate:
+      type: text
+      nullable: true
+    lien:
+      type: text
+      nullable: false
+    category:
+      type: text
+      nullable: true
+  lifecycleCallbacks: {  }

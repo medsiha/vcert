@@ -1,0 +1,23 @@
+Vcert\VeilleBundle\Entity\Bid:
+  type: entity
+  table: bid
+  fields:
+    id:
+      id: true
+      type: string
+      length: 11
+      fixed: false
+      nullable: false
+    titre:
+      type: text
+      nullable: false
+    description:
+      type: text
+      nullable: true
+    pubdate:
+      type: datetime
+      nullable: true
+    lien:
+      type: text
+      nullable: false
+  lifecycleCallbacks: {  }
