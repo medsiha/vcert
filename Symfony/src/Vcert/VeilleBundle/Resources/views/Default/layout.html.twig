@@ -19,7 +19,7 @@
 		    <div id="header">
 		        <div class="content">
 		{# a ajouter le lien vers la homepage #}
-		            <h1><a href="">
+		            <h1><a href="{#{ path('_homepage') }#}">
 		                    <img src="{{ asset('./bundles/vcertveille/images/logo.jpg') }}"
 		                         alt="Jobeet Job Board" />
 		                </a></h1>
@@ -29,7 +29,7 @@
 		                    <h2>Ask for people</h2>
 		                    <div>
 		{# a ajouter le lien de création #}
-		                        <a href="">Post a Job</a>
+		                        <a href="{#{ path('_job_create') }#}">Post a Job</a>
 		                    </div>
 		                </div>
 		

@@ -20,16 +20,16 @@
                 {{ category.title }}</a> </h1>
            </div>
 
-{#           {% render 'Jobeet2Bundle:Job:list' with {'category': category, 'max' : nJobsPage} %}
+{#           {% render 'VcertVeilleBundle:Veille:list' with {'category': category, 'max' : nVulnsPage} %} 
            
-           {% set count = category.getNJobs() -  nJobsPage  %}           
+          {% set count = category.getNJobs() -  nJobsPage  %}           
            {% if count > 0 %}
            <div class="more_jobs"> and
                 <a href="{{ path('_category_job_show', { 'slug': category.slug }) }}">
                     {{ count }}
                </a> more...
            {% endif %}
-#}
+  #}
         </div>
     {% endfor %}
 </div>

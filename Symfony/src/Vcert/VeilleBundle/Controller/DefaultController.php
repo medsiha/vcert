@@ -16,6 +16,9 @@ class DefaultController extends Controller
     	
    	$categories = $repository->findAll();
 
-        return $this->render('VcertVeilleBundle:Default:index.html.twig', array('categories' => $categories));
+        return $this->render('VcertVeilleBundle:Default:index.html.twig', 
+				array('categories' => $categories,
+				'nVulnsPage' => 10,
+				));
     }
 }
