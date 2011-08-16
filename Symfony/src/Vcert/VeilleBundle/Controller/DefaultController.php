@@ -7,9 +7,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    
-    public function indexAction($name)
+   
+    public function indexAction()
     {
-        return $this->render('VcertVeilleBundle:Default:index.html.twig', array('name' => $name));
+
+       $em = $this->get('doctrine')->getEntityManager();
+       $repository = $em->getRepository('VcertVeilleBundle:Vulnerabilities');
+    	
+   	$categories = $repository->findAll();
+
+        return $this->render('VcertVeilleBundle:Default:index.html.twig', array('categories' => $categories));
     }
 }
